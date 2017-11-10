@@ -1,3 +1,30 @@
-navbar > div > h3{
-  color: white;
+.navbar-inverse {
+     border-radius: 0px;
+}
+@media (min-width: 768px){
+.navbar {
+    border-radius: 0px;
+    }
+}
+@media (max-width: 991px){
+.side-bar {
+    display: none;
+    }
+}
+.navbar{
+    margin-bottom: 20px;
+}
+.set-margin-botton{
+    margin-bottom: 5px
+}
+.content{
+    margin-left: 10px;
+    width: 100%;
+}
+.carousel{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.set-margin-top{
+    margin-top: 20px;
 }
