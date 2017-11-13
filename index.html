@@ -18,7 +18,7 @@
   <header>
        <nav class="navbar navbar-inverse">
          <div class="container">
-           <!-- Brand and toggle get grouped for better mobile display -->
+
            <div class="navbar-header">
                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                    <span class="sr-only">Toggle navigation</span>
@@ -29,14 +29,13 @@
                <a class="navbar-brand" href="#">E-commerce</a>
            </div>
 
-           <!-- Collect the nav links, forms, and other content for toggling -->
-           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                <ul class="nav navbar-nav navbar-right">
                    <li><a href="#"> <span class="glyphicon glyphicon-shopping-cart"> </span>Canasta</a></li>
                    <li><a href="#">Salir</a></li>
                </ul>
-           </div><!-- /.navbar-collapse -->
-         </div><!-- /.container-fluid -->
+           </div><!-- /.navbar-collapse end -->
+         </div><!-- /.container-fluid end  -->
        </nav>
      </header>
 
@@ -49,7 +48,7 @@
                            <span class="input-group-btn">
                                <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
                            </span>
-                       </div><!-- /input-group -->
+                       </div>
                     </div>
 
 
@@ -73,14 +72,13 @@
                 </div>
             </div>
 <!-- carrusel de 9 columnas  -->
-
             <div class="col-md-9">
                 <div class="content">
                   <div class="col-md-12">
                     <!--son unas nuevas 12 columnas dentro de las 9 para que sea de una ancho completo  -->
                       <div class="row">
                            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                               <!-- Indicators -->
+                               <!-- Indicador -->
                                <ol class="carousel-indicators">
                                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
                                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
@@ -102,7 +100,7 @@
                                        <img src="images/banner-slider-3.jpg" alt="">
                                    </div>
                                </div>
-                               <!-- Controls -->
+                               <!-- Controles -->
                                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
                                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
                                    <span class="sr-only">Previous</span>
@@ -168,58 +166,67 @@
                   </div>
               </div>
 
-            <div id="myModal" class="modal fade" role="dialog">
-                <div class="modal-dialog">
 
-                  <!-- Modal content-->
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <button type="button" class="close" data-dismiss="modal">&times;</button>
-                      <h4 class="modal-title">Hipster Ultimate</h4>
-                    </div>
-                        <!--alerta   -->
-                        <div class="alert alert-info" role="alert">
-                        <strong>    <div class="glyphicon glyphicon-map-marker"></div></strong> Este producto está Agotado.</div>
-                        <div class="modal-body">
-                        <!--fin de alerta -->
+              <!-- Modal inicio -->
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel"><strong>HipsterUltimate</strong></h4>
+                      </div>
+                      <div class="modal-body">
+                        <div class="col-md-12">
+                            <div class="row">
+                              <!--alerta   -->
+                                <div class="alert alert-info" role="alert"><span class="glyphicon glyphicon-alert"></span> Este producto está agotado</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                              <img src="images/camiseta-1.jpg" alt="">
+                                    </div>
+                                <div class="col-md-6">
+                                    <h5>Precio: <strong>$299</strong></h5>
+                                    <h5>Calificación: <span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star-empty"></span></h5>
+                                    <span class="label label-warning">Hipster</span>
+                                    <span class="label label-default">sport</span>
+                                    <br>
+                                    <br>
+                                    <span><a href="#"><span class="glyphicon glyphicon-heart"></span> Agregar a mi lista de deseos</a></span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Nav tabs -->
                           <div class="row">
-                              <div class="col-md-6">
-                                <img src="images/camiseta-1.jpg" alt="">
-                              </div>
-                              <div class="col-md-6">
-                                <p>Precio: <b>$299</b></p>
-                                <p>Calificación:
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                  <span class="glyphicon glyphicon-star-empty"></span>
-                                </p>
-                                <span class="label label-warning">Hipster</span>
-                                <span class="label label-default">Sport</span>
-                                <p style="margin: 10px;"><a href=""> <span class="glyphicon glyphicon-heart"></span> Wish list</a></p>
-
-                              </div>
-
-                          </div>
-                          <div class="col-md-12">
-                          </div>
+                            <div class="col-md-12">
+                                <div>
+                                    <ul class="nav nav-tabs set-margin-top" role="tablist">
+                                        <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Description</a></li>
+                                        <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Comments</a></li>
+                                    </ul>
+                                        <div class="tab-content">
+                                        <div role="tabpanel" class="tab-pane active" id="home">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                                        <div role="tabpanel" class="tab-pane" id="profile">
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h3 class="panel-title">German escobar tó hace 2 días</h3>
+                                                </div>
+                                                <div class="panel-body">
+                                                    Esta camiseta está increíble, la quiero!!
+                                                </div>
+                                            </div>
+                                            <textarea name="name" rows="6" cols="67" placeholder="Ingresa tu comentario"></textarea>
+                                        </div>
+                                </div>
+                            </div>
                         </div>
-
-
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-primary">Comprar</button>
+                      </div>
+                    </div>
                   </div>
-
-                </div>
-              </div>
-
-
-
-
-
-
             </div>
          </div>
     </div>
