@@ -12,12 +12,17 @@
     display: none;
     }
 }
+
+.search {
+  height: 34px;
+  border-bottom: 10px;
+}
 .navbar{
     margin-bottom: 20px;
   }
-  
+
 .set-margin-botton{
-    margin-bottom: 5px
+margin-bottom: 20px
 }
 .content{
     margin-left: 10px;
@@ -30,3 +35,4 @@
 .set-margin-top{
     margin-top: 20px;
 }
+.carousel {margin-top: 10px}
