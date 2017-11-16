@@ -5,6 +5,7 @@
 .navbar {
     border-radius: 0px;
     }
+
 }
 @media (max-width: 991px){
 .side-bar {
@@ -13,7 +14,8 @@
 }
 .navbar{
     margin-bottom: 20px;
-}
+  }
+  
 .set-margin-botton{
     margin-bottom: 5px
 }
